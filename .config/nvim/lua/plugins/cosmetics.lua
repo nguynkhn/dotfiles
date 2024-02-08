@@ -20,8 +20,8 @@ return {
 		config = function ()
 			local bamboo = require("bamboo")
 			bamboo.setup({
-				transparent = true,
-				lualine = { transparent = true },
+				--[[ transparent = true,
+				lualine = { transparent = true }, ]]
 			})
 			bamboo.load()
 		end,
@@ -31,7 +31,7 @@ return {
 		build = ":TSUpdate",
 		config = function ()
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = { "lua", "vim", "json" },
+				ensure_installed = { "lua", "vim", "json", "vimdoc", "query" },
 				highlight = { enable = true },
 				indent = { enable = true }
 			})
