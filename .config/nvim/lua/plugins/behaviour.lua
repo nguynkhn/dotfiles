@@ -3,5 +3,5 @@ return {
 	{ "kylechui/nvim-surround", opts = {} },
 	{ "Wansmer/treesj", opts = { max_join_length = 500 } },
 	{ "numToStr/Comment.nvim", opts = {} },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+	{ "nmac427/guess-indent.nvim", opts = {} },
 }

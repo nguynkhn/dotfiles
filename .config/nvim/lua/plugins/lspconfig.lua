@@ -1,4 +1,4 @@
-local servers = { "pyright", "tsserver" }
+local servers = { "pyright", "tsserver", "cssls", "html", "emmet_language_server" }
 local lsp_setup = function ()
 	local lspconfig = require("lspconfig")
 	local capabilities = require("cmp_nvim_lsp").default_capabilities()
