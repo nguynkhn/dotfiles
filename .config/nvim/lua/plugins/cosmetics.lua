@@ -10,10 +10,6 @@ return {
 		},
 	},
 	{
-		"lewis6991/gitsigns.nvim",
-		opts = {},
-	},
-	{
 		"ribru17/bamboo.nvim",
 		lazy = false,
 		priority = 1000,
@@ -37,4 +33,5 @@ return {
 			})
 		end,
 	},
+	{ "lewis6991/gitsigns.nvim", opts = {} },
 }

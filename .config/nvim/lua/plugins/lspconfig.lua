@@ -1,7 +1,7 @@
+local servers = { "pyright", "tsserver" }
 local lsp_setup = function ()
 	local lspconfig = require("lspconfig")
 	local capabilities = require("cmp_nvim_lsp").default_capabilities()
-	local servers = { "pyright" }
 	for _, server in pairs(servers) do
 		lspconfig[server].setup({ capabilities = capabilities })
 	lspconfig.clangd.setup({
@@ -15,9 +15,7 @@ local lsp_setup = function ()
 	end
 	local lua_setiings = {
 		Lua = {
-			runtime = {
-				version = "LuaJIT"
-			},
+			runtime = { version = "LuaJIT" },
 			workspace = {
 				checkThirdParty = false,
 				library = { vim.env.VIMRUNTIME },
@@ -73,18 +71,14 @@ return {
 						cmp.select_next_item()
 					elseif luasnip.expand_or_jumpable() then
 						luasnip.expand_or_jump()
-					else
-						fallback()
-					end
+					else fallback() end
 				end, { "i", "s" }),
 				["<S-Tab>"] = cmp.mapping(function (fallback)
 					if cmp.visible() then
 						cmp.select_prev_item()
 					elseif luasnip.jumpable(-1) then
 						luasnip.jump(-1)
-					else
-						fallback()
-					end
+					else fallback() end
 				end, { "i", "s" })
 			})
 			cmp.setup({
