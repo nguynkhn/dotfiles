@@ -1,0 +1,15 @@
+[editor]
+line-number = "relative"
+cursorline = true
+true-color = true
+rulers = [80]
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+# enable = true
+wrap-indicator = ""
+
+[editor.smart-tab]
+enable = false

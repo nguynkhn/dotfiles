@@ -1,0 +1,12 @@
+[language-server.clangd]
+args = [ "-header-insertion=never", "--background-index" ]
+
+[[language]]
+name = "c"
+file-types = [ "c", "h" ]
+indent = { tab-width = 8, unit = "\t" }
+
+[[language]]
+name = "cpp"
+file-types = [ "cpp", "hpp", "h" ]
+indent = { tab-width = 8, unit = "\t" }
