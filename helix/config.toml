@@ -1,8 +1,9 @@
-theme = "base16_transparent"
+theme = "boo_berry"
 
 [editor]
 line-number = "relative"
 cursorline = true
+completion-timeout = 5
 true-color = true
 rulers = [80]
 bufferline = "always"

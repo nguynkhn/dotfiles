@@ -10,3 +10,7 @@ indent = { tab-width = 8, unit = "\t" }
 name = "cpp"
 file-types = [ "cpp", "hpp", "h" ]
 indent = { tab-width = 8, unit = "\t" }
+
+[[language]]
+name = "meson"
+indent = { tab-width = 4, unit = "    " }
