@@ -63,6 +63,10 @@
 (use-package gruber-darker-theme
   :config (load-theme 'gruber-darker t))
 
+(use-package editorconfig
+  :ensure t
+  :config (editorconfig-mode 1))
+
 (use-package emmet-mode
   :hook ((html-mode css-mode js-jsx-mode) . emmet-mode))
 (use-package rust-mode)
@@ -70,8 +74,8 @@
 (use-package lsp-mode
   :init (setq lsp-keymap-prefix "C-c l")
   :config (setq lsp-auto-guess-root t)
-  :hook (((rust-mode) . lsp)
-	 (lsp-mode . lsp-enable-which-key-OAintegration))
+  :hook (((rust-mode c-mode c++-mode) . lsp)
+	 (lsp-mode . lsp-enable-which-key-integration))
   :commands lsp)
 
 (use-package lsp-ui :commands lsp-ui-mode)
